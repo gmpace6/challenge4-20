@@ -34,3 +34,5 @@ function hasUniqueChars(str){
 return true
 }
 console.log(hasUniqueChars("Bob"))
+
+//set = Class that creates and object of unique chars
