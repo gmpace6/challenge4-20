@@ -4,11 +4,10 @@ function outer(cbf){
 }
 
 
-//this is the callback function
 function inner(){
     console.log("this is the inner function console.log")
 }
-outer(inner)
+outer(inner)//callback function
 
 
 function inner(){
@@ -16,10 +15,10 @@ function inner(){
 }
 outer(function inner(){
     console.log("this is the inner function console.log")
-}) // 
+}) // in-line callback function
 
 
 outer(() => {
     console.log("this is the inner function console.log")
-})
+}) // arrow in-line callback function
 
