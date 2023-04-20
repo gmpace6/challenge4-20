@@ -1,4 +1,25 @@
-// Write your code below
+//higher-order function
+function outer(cbf){
+    cbf()
+}
 
-let greeting = "hello"
-console.log(greeting)
+
+//this is the callback function
+function inner(){
+    console.log("this is the inner function console.log")
+}
+outer(inner)
+
+
+function inner(){
+    console.log("this is the inner function console.log")
+}
+outer(function inner(){
+    console.log("this is the inner function console.log")
+}) // 
+
+
+outer(() => {
+    console.log("this is the inner function console.log")
+})
+
